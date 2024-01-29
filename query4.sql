@@ -42,3 +42,6 @@ where b.userid = any (
 	from usertbl as u
 	where height > 175
 );
+
+select * from boards;
+insert into boards (ano, owner, balance);
