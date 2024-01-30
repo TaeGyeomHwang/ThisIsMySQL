@@ -44,4 +44,13 @@ where b.userid = any (
 );
 
 select * from boards;
-insert into boards (ano, owner, balance);
+desc boards;
+
+insert into boards (btitle, bwriter, bcontent)
+values ('좋은 아침입니다', '홍길동', '오늘도 열공하세요^^');
+
+update boards set bhitcount=0
+where bno=1;
+
+truncate table boards;
+commit;
