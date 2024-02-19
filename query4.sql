@@ -44,7 +44,8 @@ where b.userid = any (
 );
 
 select * from boards;
-desc boards;
+desc buytbl;
+desc usertbl;
 
 insert into boards (btitle, bwriter, bcontent)
 values ('좋은 아침입니다', '홍길동', '오늘도 열공하세요^^');
